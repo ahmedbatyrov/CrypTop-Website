@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        .header{
+            width: 100%;
+            height: 85px;
+            padding: 10px;
+            background-color: rgb(32, 32, 32);
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            }
+        .head1 a h4{
+            position: absolute;
+            margin-left: 30px;
+            margin-top: 20px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .head2{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 950px;
+            justify-content: space-evenly;
+        }
+        .head2 a{
+            margin: 15px;
+            color: white;
+            font-size: 19px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container{
+            margin-left: 36%;
+            margin-top: 100px;
+            border: none;
+            border-radius: 10px;
+            width: 500px;
+            height: 500px;
+            background-color: aliceblue;
+            position: relative;
+        }
+        .head{
+            color: black;
+            text-decoration: none;
+            font-size: 23px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            position: absolute;
+            margin-top: 11px;
+            margin-left: 38.5%;
+        }
+        .or{
+            position: absolute;
+            margin-left: 225px;
+            margin-top: 65px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: 900;
+        }
+        .sign_btn{
+            position: absolute;
+            margin-top: 9%;
+            margin-left: 28.7%;
+            width: 200px;
+            height: 35px;
+            background-color:rgb(7, 54, 156);
+            border: none;
+            border-radius: 20px;
+        }
+        .sign_btn:hover{
+            background-color: rgb(5, 5, 141);
+        }
+        .sign_btn a{
+            text-transform: uppercase;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+            color: white;
+        } 
+        h3{
+            position: absolute;
+            margin-left: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 19px;
+            margin-top: 90px;
+        }
+        
+         .email{
+            position: absolute;
+            margin-top: 125px;
+            margin-left: 125px;
+            width: 225px;
+            height: 25px;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+         }
+         .confirm_email{
+            position: absolute;
+            margin-top: 170px;
+            margin-left: 125px;
+            width: 225px;
+            height: 25px;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+         }
+         .password{
+            position: absolute;
+            margin-top: 215px;
+            margin-left: 125px;
+            width: 225px;
+            height: 25px;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+         }
+         .text{
+            position: absolute;
+            margin-top: 260px;
+            margin-left: 125px;
+            width: 225px;
+            height: 25px;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+         }
+         .date{
+            display: flex;
+            position: absolute;
+            margin-top: 315px;
+            margin-left: 10px;
+         }
+         .checkbox{
+            position: absolute;
+            margin-top: 365px;
+            margin-left: 10px;
+         }
+         button{
+            position: absolute;
+            margin-top: 400px;
+            margin-left: 28.7%;
+            width: 200px;
+            height: 35px;
+            background-color: rgb(10, 134, 72);
+            border: none;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+            color: white;
+            cursor: pointer;
+            transition: all 1s ease;
+         }
+         button:hover{
+            background-color: rgb(5, 73, 39);
+         }
+         
+.foot{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    position: absolute;
+    margin-top: 150px;
+    position: relative;
+}
+
+.foot a{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 35px;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.foot .contact{
+    position: absolute;
+    width: 20%;
+    height: 71%;
+    margin-top: 85px;
+    margin-left: 100px;
+}
+
+.foot .contact h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+.foot .contact span{
+    display: flex;
+    margin: 10px;
+}
+
+.foot span p{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.invest{
+    width: 20%;
+    height: 69%;
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 475px;
+}
+
+.invest h1{
+    text-align: center;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400px;
+}
+
+.invest p{
+    font-family: "SUSE", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+}
+
+.links{
+    width: 10%;
+    height: 60%;
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 850px;
+}
+
+.links h1{
+    text-align: center;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400px;
+}
+
+.links a{
+    font-family: "SUSE", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+}
+
+.news{
+    width: 35%;
+    height: 71%;
+    margin-top: 75px;
+    margin-left: 1050px;
+}
+
+.news h1{
+    text-align: center;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400px;
+    text-transform: uppercase;
+}
+
+.news input{
+    width: 225px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-family: "SUSE", sans-serif;
+}
+
+.news button{
+    width: 165px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(10, 134, 72);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.news button:hover{
+    background-color: rgb(5, 73, 39);
+}
+
+.footer_wrapper {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.copyright p + p {
+    margin-top: 0.5em;
+    font-family: monospace;
+}
+    </style>
+      <div class="header">
+        <div class="head1">
+            <a href="./index.html"><h4>CrypTop</h4></a>
+        </div>
+        <div class="head2">
+            <a href="./index.html" target="_self">Home</a>
+            <a href="./about.html" target="_self" title="About">About</a>
+            <a href="./how.html" target="_self" title="How">How</a>
+            <a href="#">Wallet <img src="./img/wallet.png" alt=""></a>
+            <a href="#">Login</a>
+            <a href="./sign up.html" target="_self">Sign Up</a>
+            <a href="#"> <img src="./img/search-icon.png" alt=""></a>
+        </div>
+    </div>
+    <div class="container">
+        <ul>
+            <li><a href="#" class="head">CrypTop</a></li>
+            <li><button class="sign_btn"><a href="#">sign up with google</a></button><br></li>
+            <li><p class="or">or</p></li>
+            <li><h3>Sign up with email address</h3></li>
+            <li><input type="email" placeholder="Email" class="email"></li>
+            <li><li><input type="email" placeholder="Confirm Email" class="confirm_email"></li></li>
+            <li><input type="password" placeholder="Password" class="password"></li>
+            <li><li><input type="text" placeholder="What Should We Call You?" class="text"></li></li>
+            <div class="date">
+                <li><p>Date Of Birth</p></li>
+                <li><input type="date"></li>
+            </div>
+            <div class="checkbox">
+                <li><input type="radio" name="Fermale"> Fermale  <input type="radio" name="Male"> Male</li>
+            </div>
+            <li><button type="submit">sign up</button></li>
+        </ul>
+        
+        <ul>
+        
+            
+        </ul>
+
+        </div>
+    </div>
+    <div class="foot">
+        <a>CrypTop</a>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <span>
+                <img src="./img/location.png" alt="">
+                <p>Page when looking at its layou</p>
+            </span><br>
+            <span>
+                <img src="./img/phone.png" alt="">
+                <p>+0123456789</p>
+            </span><br>
+            <span>
+                <img src="./img/envelope.png" alt="">
+                <p>demo@gmail.com</p>
+            </span>
+        </div>
+        <div class="invest">
+            <h1>Invest Money</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorem maxime dolorum qui architecto, nostrum inventore quisquam quod a accusantium voluptatibus! Blanditiis qui voluptatum illum voluptate, dolore debitis maiores minima.</p>
+        </div>
+        <div class="links">
+            <h1>Useful Links</h1><br>
+            <a href="#">
+                There are many
+                variations of
+                passages of
+                Lorem Ipsum
+                available, but the
+                majority have
+                suffered
+            </a>
+        </div>
+        <div class="news">
+            <h1>newsletter</h1><br>
+            <input type="email" placeholder="Enter your email"><br><br>
+            <button type="submit" >Subscribe</button>
+
+
+        </div>
+
+       </div>
+       <div class="foot2">
+        <div class="footer_wrapper">
+            <ul class="social">
+                <li class="social_item"><a href="#!"><img src="./img/icons/vk.svg" alt="Link"></a></li>
+                <li class="social_item"><a href="#!"><img src="./img/icons/instagram.svg" alt="Link"></a></li>
+                <li class="social_item"><a href="#!"><img src="./img/icons/twitter.svg" alt="Link"></a></li>
+                <li class="social_item"><a href="#!"><img src="./img/icons/gitHub.svg" alt="Link"></a></li>
+                <li class="social_item"><a href="#!"><img src="./img/icons/linkedIn.svg" alt="Link"></a></li>
+            </ul>
+            <div class="copyright">
+                <p>© 2024 ahmedovv-develop</p>
+            </div>
+        </div>
+       </div>
+    
+</body>
+</html>
